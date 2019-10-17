@@ -6,7 +6,7 @@ date_default_timezone_set('America/Araguaina');
  global $dbh;
   // connection to the database
   try {
-  $dbh = new PDO('mysql:host=localhost;dbname=project', 'root', '');
+  $dbh = new PDO('mysql:host=localhost;dbname=projectmanager', 'root', '');
   } catch(Exception $e) {
    exit("Error conectando al Servidor");
  }

@@ -59,15 +59,15 @@
                 </div>
                 <div class="card-content">
                     <div class="card-body">
-                        <form class="form-horizontal form-simple" action="validation.php">
+                        <form class="form-horizontal form-simple" method="post" action="validation.php">
                             <fieldset class="form-group position-relative has-icon-left mb-0">
-                                <input type="email" class="form-control form-control-lg" id="user-name" placeholder="Email" required>
+                                <input type="email" class="form-control form-control-lg" id="user-name" name="user-name" placeholder="Email" required>
                                 <div class="form-control-position">
                                     <i class="ft-user"></i>
                                 </div>
                             </fieldset>
                             <fieldset class="form-group position-relative has-icon-left">
-                                <input type="password" class="form-control form-control-lg" id="user-password" placeholder="Password" required>
+                                <input type="password" class="form-control form-control-lg" id="user-password" name="user-password" placeholder="Password" required>
                                 <div class="form-control-position">
                                     <i class="fa fa-key"></i>
                                 </div>

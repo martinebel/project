@@ -1,3 +1,6 @@
+<?php
+require 'db.php';
+ ?>
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
   <!-- BEGIN: Head-->
@@ -91,7 +94,7 @@
                   <span class="avatar avatar-online">
                     <img src="app-assets/images/avatar.jpg">
                   </span>
-                  <span class="user-name">John Doe</span>
+                  <span class="user-name"><?php echo $_SESSION["nombreusuario"];?></span>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                   <a class="dropdown-item" href="user-profile.html">
