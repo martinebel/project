@@ -137,7 +137,7 @@ require 'db.php';
           </li>
           <li class=" nav-item"><a href="clientes.php"><i class="ft-users"></i><span class="menu-title" data-i18n="">Clientes</span></a>
           </li>
-          <li class=" nav-item"><a href="proyectos.html"><i class="ft-airplay"></i><span class="menu-title" data-i18n="">Proyectos</span></a>
+          <li class=" nav-item"><a href="proyectos.php"><i class="ft-airplay"></i><span class="menu-title" data-i18n="">Proyectos</span></a>
           </li>
 
           <li class=" nav-item"><a href="#"><i class="ft-user"></i><span class="menu-title" data-i18n="">Users</span></a>
