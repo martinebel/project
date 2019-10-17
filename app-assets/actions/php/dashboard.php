@@ -22,7 +22,7 @@ switch ($_REQUEST["action"]) {
     $totalTareas=$row["numero"];
   }
 
-  $stmt = $dbh->prepare("select count(*) as numero from ticket_user inner join tickets on tickets.ticket_id=ticket_user.task_id where status='OPEN' and user_id=".$_SESSION["idusuario"]);
+  $stmt = $dbh->prepare("select count(*) as numero from tickets where status='OPEN' and assigned_to=".$_SESSION["idusuario"]);
   $stmt->execute();
   $result = $stmt->fetchAll();
   foreach($result as $row){
@@ -41,7 +41,8 @@ switch ($_REQUEST["action"]) {
       "project"=>$row["name"],
       "status"=>$row["status"],
       "subject"=>$row["subject"],
-      "date"=>$row["date_creation"]
+      "date"=>$row["date_creation"],
+      "project_id"=>$row["project_id"]
     ));
   }
 
@@ -49,12 +50,13 @@ switch ($_REQUEST["action"]) {
   $stmt->execute();
   $result = $stmt->fetchAll();
   foreach($result as $row){
-    array_push($listaTickets,array(
+    array_push($listaTareas,array(
       "task_id"=>$row["task_id"],
       "project"=>$row["projectName"],
       "status"=>$row["status"],
       "user"=>$row["name"],
-      "title"=>$row["title"]
+      "title"=>$row["title"],
+      "project_id"=>$row["project_id"]
     ));
   }
 

@@ -76,19 +76,12 @@ include 'header.php';
                           <tr>
                               <th>ID</th>
                               <th>Proyecto</th>
-                              <th>Cliente</th>
-                              <th>Estado</th>
                               <th>Motivo</th>
+                              <th>Estado</th>
                           </tr>
                       </thead>
-                      <tbody>
-                          <tr>
-                              <td class="text-truncate">PO-10521</td>
-                              <td class="text-truncate"><a href="#">INV-001001</a></td>
-                              <td class="text-truncate">Elizabeth W.</td>
-                              <td class="text-truncate"><span class="badge badge-success">Paid</span></td>
-                              <td class="text-truncate">$ 1200.00</td>
-                          </tr>
+                      <tbody id="ticketTable">
+
                       </tbody>
                   </table>
               </div>
@@ -100,19 +93,13 @@ include 'header.php';
     <div class="card">
         <div class="card-header">
             <h4 class="card-title">Tareas
-            <small class="float-right"><a href="tasks.php" target="_blank">Ver Todas las Tareas <i class="ft-arrow-right"></i></a></small></h4>
+            </h4>
             <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
 
         </div>
         <div class="card-content px-1">
             <div id="recent-buyers" class="media-list height-300 position-relative">
-                <a href="#" class="media border-0">
 
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Kristopher Candy</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-primary">Electronics</span><span class="badge badge-warning ml-1">Decor</span></p>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
