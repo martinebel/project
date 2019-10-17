@@ -1,5 +1,6 @@
 <?php
 include 'header.php';
+
  ?>
 
 <!-- BEGIN: Content-->
@@ -18,7 +19,7 @@ include 'header.php';
                 </div>
                 <div class="p-2 bg-gradient-x-primary white media-body">
                     <h5>Proyectos en Curso</h5>
-                    <h5 class="text-bold-400 mb-0"><i class="ft-plus"></i> 28</h5>
+                    <h5 class="text-bold-400 mb-0" id="totalProyectos"> </h5>
                 </div>
             </div>
         </div>
@@ -33,7 +34,7 @@ include 'header.php';
                 </div>
                 <div class="p-2 bg-gradient-x-danger white media-body">
                     <h5>Tareas Pendientes</h5>
-                    <h5 class="text-bold-400 mb-0"><i class="ft-arrow-up"></i>1,238</h5>
+                    <h5 class="text-bold-400 mb-0" id="totalTareas"> </h5>
                 </div>
             </div>
         </div>
@@ -48,7 +49,7 @@ include 'header.php';
                 </div>
                 <div class="p-2 bg-gradient-x-success white media-body">
                     <h5>Tickets Abiertos</h5>
-                    <h5 class="text-bold-400 mb-0"><i class="ft-arrow-up"></i> 5.6 M</h5>
+                    <h5 class="text-bold-400 mb-0" id="totalTickets">  </h5>
                 </div>
             </div>
         </div>
@@ -62,7 +63,7 @@ include 'header.php';
       <div class="card">
           <div class="card-header">
               <h4 class="card-title">Tickets
-              <small class="float-right"><a href="project-summary.html" target="_blank">Ver Todos los Tickets <i class="ft-arrow-right"></i></a></small>
+              <small class="float-right"><a href="tickets.php" target="_blank">Ver Todos los Tickets <i class="ft-arrow-right"></i></a></small>
             </h4>
 
               <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
@@ -88,34 +89,6 @@ include 'header.php';
                               <td class="text-truncate"><span class="badge badge-success">Paid</span></td>
                               <td class="text-truncate">$ 1200.00</td>
                           </tr>
-                          <tr>
-                              <td class="text-truncate">PO-532521</td>
-                              <td class="text-truncate"><a href="#">INV-01112</a></td>
-                              <td class="text-truncate">Doris R.</td>
-                              <td class="text-truncate"><span class="badge badge-warning">Overdue</span></td>
-                              <td class="text-truncate">$ 5685.00</td>
-                          </tr>
-                          <tr>
-                              <td class="text-truncate">PO-05521</td>
-                              <td class="text-truncate"><a href="#">INV-001012</a></td>
-                              <td class="text-truncate">Andrew D.</td>
-                              <td class="text-truncate"><span class="badge badge-success">Paid</span></td>
-                              <td class="text-truncate">$ 152.00</td>
-                          </tr>
-                          <tr>
-                              <td class="text-truncate">PO-15521</td>
-                              <td class="text-truncate"><a href="#">INV-001401</a></td>
-                              <td class="text-truncate">Megan S.</td>
-                              <td class="text-truncate"><span class="badge badge-success">Paid</span></td>
-                              <td class="text-truncate">$ 1450.00</td>
-                          </tr>
-                          <tr>
-                              <td class="text-truncate">PO-32521</td>
-                              <td class="text-truncate"><a href="#">INV-008101</a></td>
-                              <td class="text-truncate">Walter R.</td>
-                              <td class="text-truncate"><span class="badge badge-warning">Overdue</span></td>
-                              <td class="text-truncate">$ 685.00</td>
-                          </tr>
                       </tbody>
                   </table>
               </div>
@@ -127,7 +100,7 @@ include 'header.php';
     <div class="card">
         <div class="card-header">
             <h4 class="card-title">Tareas
-            <small class="float-right"><a href="project-summary.html" target="_blank">Ver Todas las Tareas <i class="ft-arrow-right"></i></a></small></h4>
+            <small class="float-right"><a href="tasks.php" target="_blank">Ver Todas las Tareas <i class="ft-arrow-right"></i></a></small></h4>
             <a class="heading-elements-toggle"><i class="fa fa-ellipsis-v font-medium-3"></i></a>
 
         </div>
@@ -138,41 +111,6 @@ include 'header.php';
                     <div class="media-body w-100">
                         <h6 class="list-group-item-heading">Kristopher Candy</h6>
                         <p class="list-group-item-text mb-0"><span class="badge badge-primary">Electronics</span><span class="badge badge-warning ml-1">Decor</span></p>
-                    </div>
-                </a>
-                <a href="#" class="media border-0">
-
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Lawrence Fowler</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-danger">Appliances</span></p>
-                    </div>
-                </a>
-                <a href="#" class="media border-0">
-
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Linda Olson</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-primary">Electronics</span> <span class="badge badge-success ml-1">Office</span></p>
-                    </div>
-                </a>
-                <a href="#" class="media border-0">
-
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Roy Clark</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-warning">Decor</span> <span class="badge badge-danger ml-1">Appliances</span></p>
-                    </div>
-                </a>
-                <a href="#" class="media border-0">
-
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Kristopher Candy</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-primary">Electronics</span><span class="badge badge-warning ml-1">Decor</span></p>
-                    </div>
-                </a>
-                <a href="#" class="media border-0">
-
-                    <div class="media-body w-100">
-                        <h6 class="list-group-item-heading">Lawrence Fowler</h6>
-                        <p class="list-group-item-text mb-0"><span class="badge badge-danger">Appliances</span></p>
                     </div>
                 </a>
             </div>
@@ -190,3 +128,4 @@ include 'header.php';
 <?php
 include 'footer.php';
  ?>
+<script src="app-assets/actions/js/dashboard.js"></script>
